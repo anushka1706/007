@@ -3,22 +3,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,391&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .carasoule {
         width: 800px;
+        height: 259px;
         margin: 100px auto;
-        background-color: #20c997;
+        background-color: #099268;
         border-radius: 8px;
         display: flex;
         align-items: center;
         gap: 32px;
         position: relative;
         padding-left: 65px;
+        position: relative;
+        font-family: "Montserrat";
       }
       img {
         height: 200px;
         border-radius: 8px;
         transform: scale(1.5);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.321);
       }
       .btn {
         height: 30px;
@@ -48,12 +58,33 @@
         margin-bottom: 5px;
       }
       .text {
-        font-size: 22px;
+        font-size: 17px;
         color: #ffffff;
+        line-height: 1.5;
+        font-weight: 500;
       }
       .company {
         color: #e6fcf5;
         margin-top: 5px;
+      }
+      .dots {
+        display: flex;
+        gap: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 35px);
+      }
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 2px solid #099268;
+        background-color: white;
+      }
+      .dot-1-filled {
+        background-color: #099268;
       }
     </style>
   </head>
