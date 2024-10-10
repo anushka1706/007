@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav,
+button {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+.nav,
+button,
+.div-2-section,
+.section-1 p,
+.highlights,
+.right-section {
+  font-family: "Raleway";
+}
+.down,
+.right {
+  height: 15px;
+  width: 15px;
+  scale: 1.3;
+}
+.right {
+  text-align: justify;
+}
+nav button {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  gap: 5px;
+  border: none;
+  background-color: white;
+}
+nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-right: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.unsubscribe {
+  border-radius: 10px;
+  background-color: #fff3bf;
+  padding: 12px;
+}
+button:hover {
+  cursor: pointer;
+}
+.toggle {
+  scale: 1.4;
+  margin-left: 10px;
+}
+.main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 80px 80px 0 80px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-1 {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex:1; */
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  /* width: 800px; */
+}
+.div-2 {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #716f6f6e;
+}
+.div-2 section:nth-child(2) {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.div-2 section h5 {
+  font-size: 18px;
+}
+.div-2 section p {
+  line-height: 1.4;
+  padding-top: 10px;
+}
+.div-2 section:nth-child(3) p:nth-child(2) {
+  color: rgb(244, 152, 167);
+  font-size: 16px;
+  font-weight: bold;
+}
+.email-icon {
+  height: 150px;
+  width: 200px;
+}
+.section-1 h2 {
+  width: 550px;
+  padding: 20px 0 0 0;
+  font-family: "Indie Flower";
+  flex: 1;
+  font-size: 50px;
+  font-weight: bold;
+}
+.section-1 p {
+  font-size: 18px;
+  width: 400px;
+  line-height: 1.5;
+}
+.flat-line {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.try-me {
+  position: absolute;
+  font-size: 22px;
+  font-family: "Indie Flower";
+  font-weight: bold;
+  bottom: -80px;
+  right: 120px;
+}
+.main-unsubscribe {
+  text-align: center;
+  height: 50px;
+  width: 350px;
+  background-color: #fff3bf;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+footer {
+  border-top: 3px solid #fff3bf;
+  padding: 50px;
+  margin-top: 50px;
+  display: flex;
+  gap: 25px;
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  line-height: 2;
+  justify-content: end;
+  gap: 50px;
+}
+footer ul li {
+  list-style: none;
+}
+.highlights {
+  font-size: 18px;
+  font-weight: bold;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+}
+.highlights li {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.highlights li:hover {
+  cursor: pointer;
+  color: #2b8a3e;
+}
+.highlights li span {
+  width: 150px;
+}
+.right-section h4 {
+  font-size: 16px;
+  color: #868e96b5;
+}
+.right-section ul {
+  flex: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+.right-section ul li:hover {
+  cursor: pointer;
+  color: #2b8a3e;
+  text-decoration: underline;
+}
