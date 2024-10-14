@@ -533,7 +533,7 @@ button:hover {
   grid-template-rows: auto auto auto;
 }
 .div-review ul li {
-  border: 1px solid #f498a7;
+  /* border: 1px solid #f498a7; */
   box-shadow: 0 0 5px #f498a7a2;
   flex: 1;
   list-style: none;
