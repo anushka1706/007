@@ -33,7 +33,10 @@ button,
 .inbox-zero p,
 .one-off div,
 .casual div,
-.inbox-zero div {
+.inbox-zero div,
+.review-author,
+.div-review ul li p,
+.review-award {
   font-family: "Raleway";
 }
 .section-1 h2,
@@ -46,7 +49,8 @@ header p,
 .price-plans section h2,
 .one-off h3,
 .casual h3,
-.inbox-zero h3 {
+.inbox-zero h3,
+.reviews h2 {
   font-family: "Indie Flower";
 }
 .features h4 {
@@ -374,7 +378,7 @@ button:hover {
 }
 .one-off {
   position: relative;
-  box-shadow: 0 0 25px rgba(223, 228, 182, 0.529);
+  box-shadow: 0 0 25px rgba(194, 130, 160, 0.249);
   padding: 30px;
 }
 .one-off ul li,
@@ -389,7 +393,7 @@ button:hover {
   padding: 30px;
   gap: 15px;
   align-self: start;
-  box-shadow: 0 0 25px rgba(223, 228, 182, 0.529);
+  box-shadow: 0 0 25px rgba(194, 130, 160, 0.249);
 }
 .casual {
   display: flex;
@@ -409,7 +413,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
-.heading-p{
+.heading-p {
   color: #868e96;
   font-weight: bold;
   font-size: 14px;
@@ -435,14 +439,16 @@ button:hover {
   position: absolute;
   font-weight: bold;
 }
-.month-price-span{
-  color:#868e96;
+.month-price-span {
+  color: #868e96;
   font-size: 13px;
   font-weight: bold;
 }
-.casual button,.one-off button,.inbox-zero button{
-  height:35px;
-  width:250px;
+.casual button,
+.one-off button,
+.inbox-zero button {
+  height: 35px;
+  width: 250px;
   font-size: 16px;
   padding: 5px;
   border-radius: 13px;
@@ -450,14 +456,14 @@ button:hover {
   border: none;
   margin: 15px 0 15px 0;
 }
-.after-price-p{
+.after-price-p {
   font-size: 12px;
   font-weight: bold;
   color: #868e96;
 }
 .one-off h3,
 .casual h3,
-.inbox-zero h3{
+.inbox-zero h3 {
   font-size: 25px;
 }
 .span-yearly,
@@ -471,7 +477,7 @@ button:hover {
   flex-direction: column;
   font-size: 35px;
 }
-.price-p{
+.price-p {
   margin: 5px 0 5px 0;
   font-size: 35px;
   color: black;
@@ -482,6 +488,75 @@ button:hover {
 }
 .price-plans section p::after {
   content: "💗";
+}
+.reviews {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.reviews h2{
+  text-align: center;
+  font-size: 35px;
+}
+.reviews div {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  justify-content: center;
+}
+.review-award img {
+  height: 70px;
+  background-color: none;
+  width: 60px;
+}
+.review-award {
+  display: flex;
+  box-shadow: 0 0 25px rgba(194, 130, 160, 0.249);
+  height: 100px;
+  width: 300px;
+  align-items: center;
+  padding: 10px;
+}
+.review-award section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+}
+.div-review ul {
+  display: grid;
+  column-gap: 15px;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+.div-review ul li {
+  border: 1px solid #f498a7;
+  box-shadow: 0 0 5px #f498a7a2;
+  flex: 1;
+  list-style: none;
+  padding: 15px;
+  border-radius: 10px;
+  align-self: start;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.div-review ul li section {
+  grid-column: 2/3;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.review-author {
+  font-weight: bold;
+}
+.review-img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 .footer-div {
   border-top: 3px solid #fff3bf;
