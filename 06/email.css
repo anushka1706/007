@@ -36,7 +36,10 @@ button,
 .inbox-zero div,
 .review-author,
 .div-review ul li p,
-.review-award {
+.review-award,
+.secure section p,
+.secure section a,
+.company-quote p {
   font-family: "Raleway";
 }
 .section-1 h2,
@@ -50,7 +53,8 @@ header p,
 .one-off h3,
 .casual h3,
 .inbox-zero h3,
-.reviews h2 {
+.reviews h2,
+.secure section h3 {
   font-family: "Indie Flower";
 }
 .features h4 {
@@ -489,14 +493,66 @@ button:hover {
 .price-plans section p::after {
   content: "💗";
 }
-.reviews {
+.secure {
+  display: flex;
   margin-top: 50px;
+  gap: 50px;
+  justify-content: center;
+}
+.secure section {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+.secure section a{
+  color: #f498a7;
+  font-weight: bold;
+  font-size: 18px;
+}
+.secure section a:hover,
+.secure section a:active{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.secure section h3 {
+  font-size: 35px;
+}
+.company{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.company-quote{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+  width:350px;
+  box-shadow: 0 0 25px rgba(194, 130, 160, 0.249);
+}
+.company-quote p{
+  font-weight: 600;
+  line-height: 1.4;
+}
+.company-quote p span{
+  background-color: #f498a7;
+}
+.company-quote img{
+  height:50px;
+  width: 120px;
+  padding-top: 15px;
+}
+.reviews {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   justify-content: center;
 }
-.reviews h2{
+.reviews h2 {
   text-align: center;
   font-size: 35px;
 }
@@ -522,27 +578,30 @@ button:hover {
 .review-award section {
   display: flex;
   gap: 15px;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .div-review ul {
   display: grid;
   column-gap: 15px;
   row-gap: 10px;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
 }
-.div-review ul li {
-  /* border: 1px solid #f498a7; */
-  box-shadow: 0 0 5px #f498a7a2;
-  flex: 1;
+.div-li {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 15px;
   border-radius: 10px;
   align-self: start;
   gap: 15px;
+}
+.div-review li {
+  box-shadow: 0 0 5px #f498a7a2;
+  padding: 20px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 60px 1fr;
+  gap: 15px;
 }
 .div-review ul li section {
   grid-column: 2/3;

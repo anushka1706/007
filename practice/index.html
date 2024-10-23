@@ -1,0 +1,192 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(246, 248, 253);
+      }
+      main {
+        display: grid;
+        justify-content: center;
+        font-family: sans-serif;
+        align-content: center;
+        height: 100vh;
+      }
+      .result-summary {
+        height: 400px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        box-shadow: 0 0 40px 0px rgba(184, 202, 237, 0.616);
+        border-radius: 20px;
+      }
+      .result {
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        color: rgba(255, 255, 255, 0.76);
+        background-color: #4936f2;
+        text-align: center;
+        justify-content: center;
+        gap: 38px;
+        background: linear-gradient(to bottom, #5b4dd7e0, #4936f2 50%);
+      }
+      .summary {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+        justify-content: center;
+      }
+      button {
+        padding: 7px;
+        border-radius: 30px;
+        width: 240px;
+        font-weight: bold;
+        height: 43px;
+        align-self: center;
+        border: none;
+        background-color: #303b59;
+        color: white;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+      }
+      .summary-items {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: space-around;
+        width: 240px;
+        align-self: center;
+        border-radius: 7px;
+      }
+      .summary h3 {
+        width: 240px;
+        align-self: center;
+        text-align: left;
+      }
+      .item-1 {
+        background-color: #f2c8c42c;
+        color: #e4a09a;
+        font-weight: bold;
+      }
+      .item-2 {
+        background-color: #f6d68c2b;
+        color: #f1cc73;
+        font-weight: bold;
+      }
+      .item-3 {
+        background-color: #c9f0ec72;
+        color: #5ed1c3;
+        font-weight: bold;
+      }
+      .item-4 {
+        background-color: #bfbff036;
+        color: #9696e8;
+        font-weight: bold;
+      }
+      .summary-items p:last-child {
+        color: black;
+      }
+      .summary-items span {
+        color: rgba(128, 128, 128, 0.84);
+      }
+      .result-score {
+        width: 150px;
+        aspect-ratio: 1/1;
+        background: linear-gradient(to bottom, #342e667e, #4936f2);
+        border-radius: 50%;
+        align-self: center;
+      }
+      .score-remark {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .score-remark p:first-child {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+      }
+      .score-remark p:last-child {
+        width: 180px;
+        text-align: center;
+        align-self: center;
+        line-height: 1.5;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.756);
+      }
+      .result-score {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+      }
+      .score {
+        font-weight: bolder;
+        font-size: 45px;
+      }
+      .total {
+        font-size: 15px;
+        color: rgba(217, 210, 210, 0.77);
+      }
+      button:hover{
+        background-color: #2b3774d8;
+        cursor: pointer;
+        transition-duration: 300ms;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="result-summary">
+        <div class="result">
+          <h3>Your Result</h3>
+          <div class="result-score">
+            <p class="score">76</p>
+            <p class="total">of 100</p>
+          </div>
+          <div class="score-remark">
+            <p>Great</p>
+            <p class="remark">
+              You scored higher than 45% of<br />
+              prople who have taken the tests.
+            </p>
+          </div>
+        </div>
+        <div class="summary">
+          <h3>Summary</h3>
+          <div class="details">
+            <div class="summary-items item-1">
+              <p>Reaction</p>
+              <p>80<span> / 100</span></p>
+            </div>
+            <div class="summary-items item-2">
+              <p>Memory</p>
+              <p>90 <span> / 100</span></p>
+            </div>
+            <div class="summary-items item-3">
+              <p>Verbal</p>
+              <p>60<span> / 100</span></p>
+            </div>
+            <div class="summary-items item-4">
+              <p>Visual</p>
+              <p>89<span> / 100</span></p>
+            </div>
+          </div>
+          <button>Continue</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
